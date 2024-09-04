@@ -10,7 +10,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane fx:id="root" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.ItemFormController">
    <children>
       <Text fill="#11068a" layoutX="150.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="               Manage Item" wrappingWidth="294.13671875">
@@ -39,17 +38,12 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="119.0" layoutY="210.0" onAction="#btnUpdateOnAction" style="-fx-background-color: f8d31d;" text="UPDATE">
+      <JFXButton layoutX="119.0" layoutY="210.0" onAction="#btnUpdateOnAction" style="-fx-background-color: d3cdcd;" text="UPDATE">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="433.0" layoutY="210.0" onAction="#btnNewItemOnAction" prefHeight="25.0" prefWidth="96.0" style="-fx-background-color: #2d54bf;" text="+ New Item">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </JFXButton>
-      <JFXButton layoutX="186.0" layoutY="210.0" onAction="#btnDeleteOnAction" style="-fx-background-color: #dd3838;" text="DELETE">
+      <JFXButton layoutX="186.0" layoutY="210.0" onAction="#btnDeleteOnAction" style="-fx-background-color: f8d31d;" text="DELETE">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>

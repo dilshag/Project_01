@@ -39,17 +39,12 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="133.0" layoutY="209.0" onAction="#btnUpdateOnAction" style="-fx-background-color: f8d31d;" text="UPDATE">
+      <JFXButton layoutX="133.0" layoutY="209.0" onAction="#btnUpdateOnAction" style="-fx-background-color: d3cdcd;" text="UPDATE">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="423.0" layoutY="209.0" onAction="#btnNewCustomerOnAction" style="-fx-background-color: #2d54bf;" text="+ New Customer">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </JFXButton>
-      <JFXButton layoutX="201.0" layoutY="209.0" onAction="#btnDeleteOnAction" style="-fx-background-color: #dd3838;" text="DELETE">
+      <JFXButton layoutX="201.0" layoutY="209.0" onAction="#btnDeleteOnAction" style="-fx-background-color: f8d31d;" text="DELETE">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
