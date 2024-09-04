@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootNode" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.DashboardFormController">
+   <children>
+      <ImageView fitHeight="124.0" fitWidth="103.0" layoutX="157.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/images/icons8-customer-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="109.0" fitWidth="103.0" layoutX="349.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/images/icons8-item-48.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="222.0" layoutY="36.0" prefHeight="27.0" prefWidth="156.0" text="      WELCOME" textFill="#fc2222">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="180.0" layoutY="315.0" prefHeight="17.0" prefWidth="240.0" text="      Please Select The Option To Continue" />
+      <JFXButton fx:id="btnCustomer" layoutX="175.0" layoutY="215.0" onAction="#btnCustomerOnAction" style="-fx-border-color: #2d54bf;" text="Customer" />
+      <JFXButton fx:id="btnItem" layoutX="367.0" layoutY="215.0" onAction="#btnItemOnAction" prefHeight="25.0" prefWidth="68.0" style="-fx-border-color: #2d54bf;" text="Item" />
+   </children>
+</AnchorPane>

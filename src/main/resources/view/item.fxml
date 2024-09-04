@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane fx:id="root" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.ItemFormController">
+   <children>
+      <Text fill="#11068a" layoutX="150.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="               Manage Item" wrappingWidth="294.13671875">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="52.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" ItemCode" wrappingWidth="64.9609375" />
+      <Text layoutX="56.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" wrappingWidth="55.56444972753525" />
+      <Text layoutX="342.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" QtyOnHand" />
+      <Text layoutX="341.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ItemName" />
+      <TextField fx:id="txtItemCode" layoutX="55.0" layoutY="105.0" onAction="#txtSearchOnAction" prefHeight="25.0" prefWidth="200.0" />
+      <TextField fx:id="txtItemName" layoutX="341.0" layoutY="105.0" prefHeight="25.0" prefWidth="200.0" />
+      <TextField fx:id="txtPrice" layoutX="55.0" layoutY="154.0" prefHeight="25.0" prefWidth="200.0" />
+      <TextField fx:id="txtQTYOnHand" layoutX="344.0" layoutY="153.0" prefHeight="25.0" prefWidth="200.0" />
+      <TableView fx:id="tblItem" layoutX="38.0" layoutY="252.0" prefHeight="134.0" prefWidth="519.0">
+         <columns>
+            <TableColumn fx:id="colCode" prefWidth="81.0" text=" ItemCode" />
+            <TableColumn fx:id="colItemName" prefWidth="188.0" text="ItemName" />
+            <TableColumn fx:id="colPrice" prefWidth="119.0" text="Price" />
+            <TableColumn fx:id="colQTY" prefWidth="130.0" text=" QtyOnHand" />
+         </columns>
+      </TableView>
+      <JFXButton layoutX="53.0" layoutY="210.0" onAction="#btnSaveOnAction" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: #1bc964;" text="SAVE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="119.0" layoutY="210.0" onAction="#btnUpdateOnAction" style="-fx-background-color: f8d31d;" text="UPDATE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="433.0" layoutY="210.0" onAction="#btnNewItemOnAction" prefHeight="25.0" prefWidth="96.0" style="-fx-background-color: #2d54bf;" text="+ New Item">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="186.0" layoutY="210.0" onAction="#btnDeleteOnAction" style="-fx-background-color: #dd3838;" text="DELETE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="37.0" fitWidth="42.0" layoutX="16.0" layoutY="16.0" onMouseClicked="#navigateToHome" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/images/icons8-home-48.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

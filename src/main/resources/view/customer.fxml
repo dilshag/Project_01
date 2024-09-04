@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane fx:id="root" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.CustomerFormController">
+   <children>
+      <Text fill="#11068a" layoutX="140.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="               Manage Customer" wrappingWidth="294.13671875">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tblCustomer" layoutX="41.0" layoutY="252.0" prefHeight="134.0" prefWidth="519.0">
+        <columns>
+          <TableColumn fx:id="colID" prefWidth="81.0" text="CustomerID" />
+          <TableColumn fx:id="colName" prefWidth="188.0" text="Customer Name" />
+            <TableColumn fx:id="colAddress" prefWidth="119.0" text="Customer Address" />
+            <TableColumn fx:id="colNum" prefWidth="130.0" text="Phone Number" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtCustomerID" layoutX="65.0" layoutY="108.0" onAction="#txtSearchOnAction" prefHeight="25.0" prefWidth="196.0" />
+      <TextField fx:id="txtCustomer_Address" layoutX="337.0" layoutY="110.0" prefHeight="25.0" prefWidth="196.0" />
+      <TextField fx:id="txtCustomer_Name" layoutX="66.0" layoutY="154.0" prefHeight="25.0" prefWidth="196.0" />
+      <TextField fx:id="txtPhoneNumber" layoutX="338.0" layoutY="156.0" prefHeight="25.0" prefWidth="196.0" />
+      <Text layoutX="66.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CustomerID" wrappingWidth="134.13671875" />
+      <Text layoutX="66.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer_Name" wrappingWidth="134.13671875" />
+      <Text layoutX="338.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PhoneNumber" wrappingWidth="134.13671875" />
+      <Text layoutX="337.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer_Address" wrappingWidth="134.13671875" />
+      <JFXButton layoutX="66.0" layoutY="209.0" onAction="#btnSaveOnAction" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: #1bc964;" text="SAVE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="133.0" layoutY="209.0" onAction="#btnUpdateOnAction" style="-fx-background-color: f8d31d;" text="UPDATE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="423.0" layoutY="209.0" onAction="#btnNewCustomerOnAction" style="-fx-background-color: #2d54bf;" text="+ New Customer">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="201.0" layoutY="209.0" onAction="#btnDeleteOnAction" style="-fx-background-color: #dd3838;" text="DELETE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="37.0" fitWidth="42.0" layoutX="13.0" layoutY="15.0" onMouseClicked="#navigateToHome" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/images/icons8-home-48.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
