@@ -34,17 +34,17 @@
       <Text layoutX="66.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer_Name" wrappingWidth="134.13671875" />
       <Text layoutX="338.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PhoneNumber" wrappingWidth="134.13671875" />
       <Text layoutX="337.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer_Address" wrappingWidth="134.13671875" />
-      <JFXButton layoutX="66.0" layoutY="209.0" onAction="#btnSaveOnAction" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: #1bc964;" text="SAVE">
+      <JFXButton layoutX="190.0" layoutY="209.0" onAction="#btnSaveOnAction" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: #1bc964;" text="SAVE">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="133.0" layoutY="209.0" onAction="#btnUpdateOnAction" style="-fx-background-color: d3cdcd;" text="UPDATE">
+      <JFXButton layoutX="261.0" layoutY="209.0" onAction="#btnUpdateOnAction" style="-fx-background-color: d3cdcd;" text="UPDATE">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="201.0" layoutY="209.0" onAction="#btnDeleteOnAction" style="-fx-background-color: f8d31d;" text="DELETE">
+      <JFXButton layoutX="332.0" layoutY="209.0" onAction="#btnDeleteOnAction" style="-fx-background-color: f8d31d;" text="DELETE">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
